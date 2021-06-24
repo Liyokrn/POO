@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>API Trabajadores</title>
+  <link href="estilo.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<div class="header">
+    <a href="#default" class="logo">Trabajadores API</a>
+    <div class="header-right">
+    </div>
+  </div>
+
+<body>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <font face="Verdana">Datos del Trabajador</font>
+        <br></br>
+        <form method="post" action="http://localhost:3000/agregar">
+          <div class="form-group">
+            <label for="exampleInputId1"></label>
+            <input type="text" class="form-control" id="id" name="id" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputNombre1"></label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputN. de Telefono1"></label>
+            <input type="text" class="form-control" id="Telefono" name="telefono"
+              placeholder="Telefono">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputCorreo"></label>
+            <input type="" class="form-control" id="correo" placeholder="Correo Electronico" name="correo">
+
+          
+          <div class="form-group">
+            <label for="exampleInputTipo de Sangre1"></label>
+            <input type="text" class="form-control" id="edad" name="edad"
+              placeholder="edad">
+            </div>
+        <div class="form-group">
+              <label for="exampleInputDomicilio1"></label>
+              <input type="text" class="form-control" id="domicilio" placeholder="Domicilio" name="domicilio">
+            </div>
+          </div>
+          <br>
+          <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <font face="Comic Sans MS,arial,verdana">Obtener datos</font>
+        <div class="form-group">
+          <label for="exampleInputDomicilio1"></label>
+          <input type="text" class="form-control"  placeholder="Ingresa id de usuario">
+          <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
